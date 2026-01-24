@@ -1,39 +1,34 @@
-# Hi there, I'm Mahesh! 👋
+## Hi, I’m Mahesh 👋
 
-## 👀 About Me
-I’m an enthusiastic Computer Science and Engineering undergraduate passionate about data science and machine learning. I specialize in building and deploying ML models that solve real-world problems and drive AI-driven innovations.
+I build **CPU-first, memory-efficient LLM inference systems** from first principles.
 
-## 🌱 Currently Learning
-- Advanced Machine Learning techniques
-- Deep Learning with TensorFlow and PyTorch
-- Data Analysis and Visualization with Python (Pandas, Matplotlib, Seaborn)
-- Natural Language Processing (NLP) and Computer Vision
+My work focuses on understanding **why** performance happens — not just making it faster.
 
-## 💼 Skills and Technologies
-- **Programming Languages:** Python, R, C++
-- **Machine Learning Libraries:** TensorFlow, Keras, Scikit-Learn, PyTorch
-- **Data Handling and Analysis:** Pandas, NumPy, SQL
-- **Tools:** Jupyter, Git, Docker
-- **Cloud Platforms:** AWS, Google Cloud
+### What I work on
+- LLM inference and training internals in **pure C**
+- Cache-aware and memory-efficient implementations of attention, matmul, and tokenization
+- Cross-layer optimization: math → model → memory → CPU microarchitecture
 
-## 💞️ Looking to Collaborate On
-- Open source ML and data science projects
-- Research in AI and machine learning applications
-- Innovative solutions leveraging data-driven insights
+### Why this matters
+GPUs are expensive and scarce.  
+Most real-world deployments need **cheap, predictable, CPU-based inference**.
 
-## 📫 How to Reach Me
-- LinkedIn: [Mahesh Jakkala](https://www.linkedin.com/in/mahesh-jakkala-6632b330b)
-- Email: azmaheshyadav@gmail.com
-- GitHub: [github.com/mahesh24385](https://github.com/mahesh24385)
+I study how LLMs behave at:
+- cache-line level
+- memory layout level
+- instruction and datatype level
 
-## 😄 Pronouns
-He/Him
+### Proof of work
+- Contributor to `ggml-org/llama.cpp`
+  - Fixed integer type inconsistencies in split helpers (PR link)
+- Building an LLM from scratch in C:
+  - forward + backward pass
+  - explicit memory layout control
+  - benchmarks vs baseline implementations
 
-## ⚡ Fun Fact
-I'm a huge fan of sci-fi movies and enjoy exploring the intersection of technology and creativity. When I'm not coding, you'll find me playing chess or experimenting with new AI projects.
+### Current focus
+- Attention performance on CPUs
+- Quantization tradeoffs (INT8 / INT4)
+- Memory locality and cache misses in transformer inference
 
----
-
-Feel free to check out my repositories and connect with me for collaboration opportunities!
-
-![Profile views](https://gpvc.arturio.dev/mahesh24385)
+If you work on ML systems, inference engines, or compilers, I’d love to exchange notes.
