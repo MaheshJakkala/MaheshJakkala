@@ -20,7 +20,7 @@ I study how LLMs behave at:
 
 ### Proof of work
 - Contributor to `ggml-org/llama.cpp`
-  - Fixed integer type inconsistencies in split helpers (#18894)
+  - Fixed integer type inconsistencies in split helpers (https://github.com/ggml-org/llama.cpp/pull/18894)
 - Building an LLM from scratch in C:
   - forward + backward pass
   - explicit memory layout control
