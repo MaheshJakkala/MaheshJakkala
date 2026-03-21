@@ -28,7 +28,7 @@ I study how LLMs behave at:
 
 ### Current focus
 - Attention performance on CPUs
-- Quantization tradeoffs (INT8 / INT4)
+- Quantization tradeoffs (INT8 / INT4 / INT2)
 - Memory locality and cache misses in transformer inference
 
 If you work on ML systems, inference engines, or compilers, I’d love to exchange notes.
