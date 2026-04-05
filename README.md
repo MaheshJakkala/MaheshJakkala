@@ -1,22 +1,25 @@
 ## Hi, I’m Mahesh 👋
 
-I build **CPU-first, memory-efficient LLM inference systems** from first principles.
+I build systems to run large language models efficiently on CPUs reducing cost, memory, and latency.
 
-My work focuses on understanding **why** performance happens — not just making it faster.
+→ 8.6× faster than PyTorch CPU (INT8 + AVX2)
+→ 4× lower memory footprint
+→ Pure C (no ML frameworks)
 
-### What I work on
-- LLM inference and training internals in **pure C**
-- Cache-aware and memory-efficient implementations of attention, matmul, and tokenization
-- Cross-layer optimization: math → model → memory → CPU microarchitecture
+Focused on making LLM inference deployable everywhere — not just on GPUs.
 
 ### Why this matters
-GPUs are expensive and scarce.  
-Most real-world deployments need **cheap, predictable, CPU-based inference**.
+Why this matters
 
-I study how LLMs behave at:
-- cache-line level
-- memory layout level
-- instruction and datatype level
+LLM inference runs millions of times per day.
+
+Reducing cost per request even slightly can save companies millions annually.
+
+Example:
+If inference cost drops from $0.002 → $0.0003,
+a system serving 10M requests/day saves ~$6M/year.
+
+I work on making that possible on CPUs.
 
 ### Proof of work
 - Contributor to `ggml-org/llama.cpp`
