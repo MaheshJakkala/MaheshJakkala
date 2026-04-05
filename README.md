@@ -1,37 +1,76 @@
 ## Hi, I’m Mahesh 👋
 
-I build systems to run large language models efficiently on CPUs reducing cost, memory, and latency.
+I build CPU-first systems for running large language models - reducing inference cost, memory usage, and latency.
 
-→ 8.6× faster than PyTorch CPU (INT8 + AVX2)
-→ 4× lower memory footprint
+→ 8.6× faster than PyTorch CPU (INT8 + AVX2)  
+→ 4× lower memory footprint  
 → Pure C (no ML frameworks)
 
-Focused on making LLM inference deployable everywhere — not just on GPUs.
+I focus on making LLM inference deployable everywhere — not just on GPUs.
 
-### Why this matters
-Why this matters
+---
 
-LLM inference runs millions of times per day.
+## 💰 Why this matters
 
-Reducing cost per request even slightly can save companies millions annually.
+LLM inference runs millions to billions of times.
+
+Even small efficiency gains translate directly into **millions of dollars saved**.
 
 Example:
-If inference cost drops from $0.002 → $0.0003,
-a system serving 10M requests/day saves ~$6M/year.
 
-I work on making that possible on CPUs.
+- GPU inference: $0.002 / request  
+- Optimized CPU inference: $0.0003 / request  
 
-### Proof of work
+At 10M requests/day:
+
+→ ~$17,000 saved per day  
+→ ~$6M saved per year  
+
+I work on making this shift possible.
+
+---
+
+## ⚙️ What I build
+
+- Transformer LLM from scratch in C  
+- Custom tensor + memory layout control  
+- INT8 / low-bit quantization  
+- AVX2 SIMD optimized matmul  
+- Cache-aware attention implementations  
+- End-to-end forward + backward pass  
+
+---
+
+## 🧪 Proof of work
+
 - Contributor to `ggml-org/llama.cpp`
-  - Fixed integer type inconsistencies in split helpers (https://github.com/ggml-org/llama.cpp/pull/18894)
-- Built an LLM from scratch in C:
-  - forward + backward pass
-  - explicit memory layout control
-  - benchmarks vs baseline implementations
+  - Fixed integer type inconsistencies in split helpers  
+  - PR: https://github.com/ggml-org/llama.cpp/pull/18894  
 
-### Current focus
-- Attention performance on CPUs
-- Quantization tradeoffs (INT8 / INT4 / INT2)
-- Memory locality and cache misses in transformer inference
+- Built a CPU-first LLM engine:
+  - Explicit memory layout control  
+  - Quantized inference  
+  - Benchmarked against baseline implementations  
 
-If you work on ML systems, inference engines, or compilers, I’d love to exchange notes.
+---
+
+## 🧠 Current focus
+
+- Attention performance on CPUs  
+- Memory bandwidth & cache behavior  
+- KV-cache optimization  
+- INT8 / INT4 / INT2 tradeoffs  
+
+---
+
+## 🎯 What I care about
+
+Making LLM systems:
+
+- Cheaper  
+- Faster  
+- Deployable on commodity hardware  
+
+---
+
+If you work on ML systems, inference engines, or compilers - let’s connect.
