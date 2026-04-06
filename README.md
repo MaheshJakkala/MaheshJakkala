@@ -6,6 +6,8 @@ I build CPU-first systems for running large language models - reducing inference
 → 4× lower memory footprint  
 → Pure C (no ML frameworks)
 
+All benchmarks are reproducible.
+
 I focus on making LLM inference deployable everywhere — not just on GPUs.
 
 ---
@@ -30,14 +32,14 @@ I work on making this shift possible.
 
 ---
 
-⚙️ Systems I build
+## ⚙️ Systems I build
 
-• Transformer inference engine in C (forward + backward pass)
-• Cache-aware attention kernels (tiled, memory-optimized)
-• INT8/low-bit quantization pipelines
-• AVX2 SIMD optimized matmul & kernels
-• Arena-based memory allocator (zero fragmentation)
-• KV-cache optimized for long sequence inference
+* Transformer inference engine in C (forward + backward pass)
+* Cache-aware attention kernels (tiled, memory-optimized)
+* INT8/low-bit quantization pipelines
+* AVX2 SIMD optimized matmul & kernels
+* Arena-based memory allocator (zero fragmentation)
+* KV-cache optimized for long sequence inference
 
 ## 🧪 Proof of work
 
@@ -54,10 +56,12 @@ I work on making this shift possible.
 
 ## 🧠 Current focus
 
-- Attention performance on CPUs  
-- Memory bandwidth & cache behavior  
-- KV-cache optimization  
-- INT8 / INT4 / INT2 tradeoffs  
+- Attention performance on CPUs
+- Memory bandwidth vs compute bottlenecks
+- Cache locality (L1/L2/L3 behavior) 
+- SIMD utilization efficiency
+- Operator fusion & kernel optimization
+- Auto-vectorization vs hand-written intrinsics
 
 ---
 
