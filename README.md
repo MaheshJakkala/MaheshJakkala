@@ -30,16 +30,14 @@ I work on making this shift possible.
 
 ---
 
-## ⚙️ What I build
+⚙️ Systems I build
 
-- Transformer LLM from scratch in C  
-- Custom tensor + memory layout control  
-- INT8 / low-bit quantization  
-- AVX2 SIMD optimized matmul  
-- Cache-aware attention implementations  
-- End-to-end forward + backward pass  
-
----
+• Transformer inference engine in C (forward + backward pass)
+• Cache-aware attention kernels (tiled, memory-optimized)
+• INT8/low-bit quantization pipelines
+• AVX2 SIMD optimized matmul & kernels
+• Arena-based memory allocator (zero fragmentation)
+• KV-cache optimized for long sequence inference
 
 ## 🧪 Proof of work
 
