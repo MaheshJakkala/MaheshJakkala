@@ -54,7 +54,7 @@ I work on making this shift possible.
 
 ---
 
-## 🔬 Systems focus
+## 🔬 Current focus
 
 - Attention performance on CPUs
 - Memory bandwidth vs compute bottlenecks
