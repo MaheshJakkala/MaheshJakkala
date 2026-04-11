@@ -8,7 +8,7 @@ I build CPU-first systems for running large language models - reducing inference
 
 All benchmarks are reproducible.
 
-I focus on making LLM inference deployable everywhere — not just on GPUs.
+I focus on making LLM inference deployable everywhere - not just on GPUs.
 
 ---
 
